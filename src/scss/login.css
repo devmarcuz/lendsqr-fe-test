@@ -1,0 +1,181 @@
+main {
+  height: 100vh;
+  width: 100%;
+  background: white;
+}
+main header {
+  line-height: 25vh;
+  padding-left: 100px;
+}
+main header .img {
+  color: none;
+}
+main .login-container {
+  display: flex;
+  padding: 0 100px;
+  font-family: "Work Sans", sans-serif;
+}
+main .login-container .left-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+main .login-container .right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+}
+main .login-container .right-section h3 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #213f7d;
+}
+main .login-container .right-section p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(84, 95, 125);
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+main .login-container .right-section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+main .login-container .right-section form .error-message {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(216, 104, 104, 0.0941176471);
+  color: rgba(216, 104, 104, 0.662745098);
+  padding: 10px;
+  text-align: start;
+  transition: top 0.3s ease-in-out;
+  font-size: 13px;
+  border-radius: 4px;
+  display: none;
+}
+main .login-container .right-section form.error .error-message {
+  top: -22%;
+  display: inherit;
+}
+main .login-container .right-section form input.email {
+  padding: 10px 8px;
+  border-radius: 2px;
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(84, 95, 125);
+  font-family: inherit;
+}
+main .login-container .right-section form .input-password {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+main .login-container .right-section form .input-password input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  padding: 10px 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(84, 95, 125);
+  font-family: inherit;
+  border: 2px solid rgba(84, 95, 125, 0.15);
+}
+main .login-container .right-section form .input-password span {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-95%, -50%);
+  font-size: 12px;
+  color: #39cdcc;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+main .login-container .right-section form a {
+  color: #39cdcc;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+main .login-container .right-section form button {
+  font-family: inherit;
+  background: #39cdcc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 576px) {
+  main header {
+    line-height: 15vh;
+    padding-left: 50px;
+  }
+  main header .img {
+    color: none;
+  }
+  main header .img svg {
+    width: 150px;
+  }
+  main .login-container {
+    padding: 0 50px;
+  }
+  main .login-container .left-section {
+    flex: 0;
+  }
+  main .login-container .left-section img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .login-container .right-section {
+    flex: 1;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  main header {
+    line-height: 15vh;
+    padding-left: 100px;
+  }
+  main header .img {
+    color: none;
+  }
+  main .login-container .left-section {
+    flex: 0;
+  }
+  main .login-container .left-section img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .login-container .right-section {
+    flex: 1;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  main .login-container {
+    padding: 0 70px;
+  }
+  main .login-container .left-section {
+    flex: 0.6;
+  }
+  main .login-container .left-section img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .login-container .right-section {
+    flex: 0.4;
+  }
+}/*# sourceMappingURL=login.css.map */
