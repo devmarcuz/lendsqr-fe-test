@@ -50,5 +50,15 @@
   },
   "devDependencies": {
     "web-vitals": "^3.4.0"
-  }
+  },
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "build/**",
+      "use": "@vercel/static"
+    }
+  ]
 }
