@@ -2,6 +2,10 @@
 
 This repository contains the solution for the Lendsqr Frontend Test. It includes the implementation of four pages: Login, Dashboard, User page, and User details page. The pages are built using React with TypeScript and styled using SCSS. The data for the User page is fetched from a mock API that provides 500 records. The User details page uses local storage or indexedDB to store and retrieve user details.
 
+## Deployment
+
+The deployed application can be found at [https://ademola-lendsqr-fe-test.vercel.app/](https://ademola-lendsqr-fe-test.vercel.app/)
+
 ## Pages
 
 1. **Login**: This page allows the user to log in using any email and a password of at least 4 characters. Email validation is performed to ensure a valid email format.
@@ -17,10 +21,6 @@ This repository contains the solution for the Lendsqr Frontend Test. It includes
 - React: JavaScript library for building user interfaces
 - TypeScript: Language of choice for type-checking and enhanced development experience
 - SCSS: CSS preprocessor for styling the application
-
-## Deployment
-
-The deployed application can be found at [https://example.com](https://example.com)
 
 ## Conclusion
 
