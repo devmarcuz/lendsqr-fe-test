@@ -3,10 +3,16 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import DashBoardUser from "./pages/DashBoardUser";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [totalPosts, setTotalPosts] = useState([]);
+
+  useEffect(() => {
+    if (localStorage.getItem("lendsqr_data")) {
+      setTotalPosts(JSON.parse(localStorage.getItem("lendsqr_data")));
+    }
+  }, []);
 
   return (
     <Router>

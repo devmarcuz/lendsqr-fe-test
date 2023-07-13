@@ -23,7 +23,7 @@ const Dashboard = ({ totalPosts, setTotalPosts }) => {
       <div className="main-container">
         <LeftDashboardSection bar={bar} />
         <RightSectionDashboard
-          totalPosts={totalPosts}
+          totalPosts={totalPosts && totalPosts}
           setTotalPosts={setTotalPosts}
         />
       </div>

@@ -435,7 +435,7 @@
         .left-dashboard-section {
           position: absolute;
           z-index: 100;
-          width: 65%;
+          width: 80%;
           display: none;
 
           &.active {
@@ -450,6 +450,24 @@
               position: absolute;
               right: 5%;
               top: 10%;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+
+          .second-case {
+            p {
+              font-size: 14px;
+            }
+          }
+
+          .parent-case {
+            .tag-list {
+              p {
+                font-size: 14px;
+              }
             }
           }
         }

@@ -11,7 +11,9 @@ const RightSectionDashboard = ({ totalPosts, setTotalPosts }) => {
   const [searchArray, setSearchArray] = useState([]);
 
   const savingsLenght = () => {
-    return totalPosts.filter((user) => user.savings === true).length;
+    return (
+      totalPosts && totalPosts.filter((user) => user.savings === true).length
+    );
   };
 
   const savings = savingsLenght();

@@ -362,7 +362,7 @@
   .dashboard-container .main-container .left-dashboard-section {
     position: absolute;
     z-index: 100;
-    width: 65%;
+    width: 80%;
     display: none;
   }
   .dashboard-container .main-container .left-dashboard-section.active {
@@ -376,6 +376,15 @@
     position: absolute;
     right: 5%;
     top: 10%;
+  }
+  .dashboard-container .main-container .left-dashboard-section .first-case p {
+    font-size: 14px;
+  }
+  .dashboard-container .main-container .left-dashboard-section .second-case p {
+    font-size: 14px;
+  }
+  .dashboard-container .main-container .left-dashboard-section .parent-case .tag-list p {
+    font-size: 14px;
   }
   .dashboard-container .main-container .right-dashboard-section {
     padding: 46px 25px;
