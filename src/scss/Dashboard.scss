@@ -67,11 +67,34 @@
           &.user {
             background: rgba(57, 205, 204, 4%);
             opacity: 1;
+            position: relative;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 4px;
+              background: #39cdcc;
+            }
           }
 
           &:hover {
             background: rgba(57, 205, 204, 4%);
             opacity: 1;
+
+            position: relative;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 4px;
+              background: #39cdcc;
+            }
           }
 
           p {
