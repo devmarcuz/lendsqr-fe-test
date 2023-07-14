@@ -44,10 +44,6 @@ nav .search-container .search input::-moz-placeholder {
   color: #545f7d;
   opacity: 70%;
 }
-nav .search-container .search input:-ms-input-placeholder {
-  color: #545f7d;
-  opacity: 70%;
-}
 nav .search-container .search input::placeholder {
   color: #545f7d;
   opacity: 70%;

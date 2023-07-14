@@ -44,10 +44,6 @@
   color: #545f7d;
   opacity: 70%;
 }
-.filter-dropdown-container .label input:-ms-input-placeholder {
-  color: #545f7d;
-  opacity: 70%;
-}
 .filter-dropdown-container .label input::placeholder {
   color: #545f7d;
   opacity: 70%;
@@ -66,10 +62,6 @@
   margin: 0;
 }
 .filter-dropdown-container .label .input input::-moz-placeholder {
-  color: #545f7d;
-  opacity: 70%;
-}
-.filter-dropdown-container .label .input input:-ms-input-placeholder {
   color: #545f7d;
   opacity: 70%;
 }

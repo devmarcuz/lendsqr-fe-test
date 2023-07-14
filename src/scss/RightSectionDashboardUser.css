@@ -46,16 +46,7 @@
   top: 0%;
   left: 0;
   color: #e4033b;
-  -webkit-animation: animate 0.5s normal;
-          animation: animate 0.5s normal;
-}
-@-webkit-keyframes animate {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: -50%;
-  }
+  animation: animate 0.5s normal;
 }
 @keyframes animate {
   0% {
@@ -81,8 +72,7 @@
   top: 0%;
   left: 0;
   color: #39cdcc;
-  -webkit-animation: animate 0.5s normal;
-          animation: animate 0.5s normal;
+  animation: animate 0.5s normal;
 }
 .right-dashboard-section-user .user-details-container {
   width: 100%;

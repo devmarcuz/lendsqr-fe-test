@@ -128,9 +128,10 @@ main .login-container .right-section form button {
   }
   main .login-container {
     padding: 0 50px;
+    flex-direction: column;
   }
   main .login-container .left-section {
-    flex: 0;
+    flex: 1;
   }
   main .login-container .left-section img {
     width: 100%;
@@ -150,8 +151,11 @@ main .login-container .right-section form button {
   main header .img {
     color: none;
   }
+  main .login-container {
+    flex-direction: column;
+  }
   main .login-container .left-section {
-    flex: 0;
+    flex: 1;
   }
   main .login-container .left-section img {
     width: 100%;
