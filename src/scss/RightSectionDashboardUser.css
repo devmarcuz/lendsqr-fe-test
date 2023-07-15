@@ -272,6 +272,9 @@
     padding: 9px 12px;
     font-size: 13px;
   }
+  .right-dashboard-section-user .user-container .header .head-details .action button.activate {
+    margin-top: 20px;
+  }
   .right-dashboard-section-user .user-details-container {
     overflow-x: scroll;
   }

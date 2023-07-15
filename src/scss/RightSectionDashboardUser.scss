@@ -328,6 +328,10 @@
               button {
                 padding: 9px 12px;
                 font-size: 13px;
+
+                &.activate {
+                  margin-top: 20px;
+                }
               }
             }
           }
