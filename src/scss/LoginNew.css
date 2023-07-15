@@ -44,7 +44,6 @@ main .right-login-container .space {
 main .right-login-container .right-section {
   display: flex;
   flex-direction: column;
-  padding-left: 80px;
   padding-right: 0;
   background: white;
   height: 100%;
@@ -213,7 +212,6 @@ main .right-login-container .right-section form button {
        object-fit: cover;
   }
   main .right-login-container .right-section {
-    padding-left: 0;
     padding-right: 70px;
   }
-}/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=LoginNew.css.map */

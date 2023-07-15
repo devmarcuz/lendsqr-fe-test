@@ -30,15 +30,18 @@
             border-radius: 8px;
             border: 1px solid #e4033b;
             font-family: inherit;
-            padding: 12px 15px;
+            // padding: 0 8px;
             color: #e4033b;
             font-size: 14px;
-            font-weight: 400;
+            font-weight: 600;
             margin-right: 20px;
             cursor: pointer;
             position: relative;
             transition: 0.3s all ease-in-out;
             background: white;
+            text-transform: uppercase;
+            width: 170px;
+            height: 40px;
 
             &:hover {
               background-color: #e4033b;
@@ -291,6 +294,14 @@
           }
         }
       }
+
+      &:first-child {
+        .details {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+          column-gap: 20px;
+        }
+      }
     }
   }
 
@@ -387,6 +398,18 @@
             .detail {
               p {
                 font-size: 14px;
+              }
+            }
+          }
+
+          &:first-child {
+            .details {
+              grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+
+              .detail {
+                p {
+                  font-size: 14px;
+                }
               }
             }
           }

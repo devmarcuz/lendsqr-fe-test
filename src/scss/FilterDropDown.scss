@@ -50,11 +50,11 @@
 
     .input {
       width: 100%;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       position: relative;
 
       input {
-        padding: 8px 12px;
+        padding: 8px 15px;
         border: 1px solid rgba(33, 63, 125, 0.2);
         border-radius: 8px;
         font-family: inherit;
@@ -88,7 +88,7 @@
         border-right: none;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-        padding-left: 8px;
+        padding-left: 15px;
         color: rgb(84, 95, 125, 0.7);
         font-weight: 400;
         text-transform: capitalize;
@@ -99,7 +99,7 @@
       position: relative;
       width: 100%;
       cursor: pointer;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
 
       &__selected {
         display: flex;
@@ -115,6 +115,7 @@
         font-weight: 400;
         text-transform: capitalize;
         width: 100%;
+        padding-left: 15px;
 
         svg {
           position: absolute;
@@ -144,6 +145,7 @@
         transition: opacity 0.3s ease, visibility 0.3s ease;
         z-index: 1;
         text-align: start;
+        padding-left: 15px;
       }
 
       &__option {
@@ -176,6 +178,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 
     button {
       background: none;

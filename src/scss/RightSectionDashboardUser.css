@@ -25,15 +25,17 @@
   border-radius: 8px;
   border: 1px solid #e4033b;
   font-family: inherit;
-  padding: 12px 15px;
   color: #e4033b;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   margin-right: 20px;
   cursor: pointer;
   position: relative;
   transition: 0.3s all ease-in-out;
   background: white;
+  text-transform: uppercase;
+  width: 170px;
+  height: 40px;
 }
 .right-dashboard-section-user .user-container .header .head-details .action button:hover {
   background-color: #e4033b;
@@ -243,6 +245,12 @@
 .right-dashboard-section-user .user-portfolio .information .details .detail p span {
   text-decoration: line-through;
 }
+.right-dashboard-section-user .user-portfolio .information:first-child .details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
 @media only screen and (max-width: 690px) {
   .right-dashboard-section-user {
     overflow-x: hidden;
@@ -314,6 +322,12 @@
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   }
   .right-dashboard-section-user .user-portfolio .information .details .detail p {
+    font-size: 14px;
+  }
+  .right-dashboard-section-user .user-portfolio .information:first-child .details {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+  .right-dashboard-section-user .user-portfolio .information:first-child .details .detail p {
     font-size: 14px;
   }
 }

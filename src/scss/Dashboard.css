@@ -5,6 +5,7 @@
 .dashboard-container .main-container {
   display: flex;
   height: 100%;
+  padding-top: 90px;
 }
 .dashboard-container .main-container .left-dashboard-section {
   width: 21%;
@@ -383,6 +384,7 @@
     position: absolute;
     z-index: 100;
     width: 80%;
+    z-index: 90;
     display: none;
   }
   .dashboard-container .main-container .left-dashboard-section.active {
@@ -469,6 +471,7 @@
     position: absolute;
     z-index: 100;
     width: 50%;
+    z-index: 90;
     display: none;
   }
   .dashboard-container .main-container .left-dashboard-section.active {
@@ -533,7 +536,7 @@
   }
   .dashboard-container .main-container .left-dashboard-section {
     position: absolute;
-    z-index: 100;
+    z-index: 90;
     width: 50%;
     display: none;
   }

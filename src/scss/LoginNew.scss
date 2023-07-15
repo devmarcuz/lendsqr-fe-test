@@ -50,7 +50,6 @@ main {
     .right-section {
       display: flex;
       flex-direction: column;
-      padding-left: 80px;
       padding-right: 0;
       background: white;
       height: 100%;
@@ -253,7 +252,6 @@ main {
 
       .right-login-container {
         .right-section {
-          padding-left: 0;
           padding-right: 70px;
         }
       }

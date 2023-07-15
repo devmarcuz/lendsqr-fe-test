@@ -5,6 +5,7 @@
   .main-container {
     display: flex;
     height: 100%;
+    padding-top: 90px;
 
     .left-dashboard-section {
       width: 21%;
@@ -459,6 +460,7 @@
           position: absolute;
           z-index: 100;
           width: 80%;
+          z-index: 90;
           display: none;
 
           &.active {
@@ -576,6 +578,7 @@
           position: absolute;
           z-index: 100;
           width: 50%;
+          z-index: 90;
           display: none;
 
           &.active {
@@ -661,7 +664,7 @@
 
         .left-dashboard-section {
           position: absolute;
-          z-index: 100;
+          z-index: 90;
           width: 50%;
           display: none;
 

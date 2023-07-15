@@ -50,11 +50,11 @@
 }
 .filter-dropdown-container .label .input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   position: relative;
 }
 .filter-dropdown-container .label .input input {
-  padding: 8px 12px;
+  padding: 8px 15px;
   border: 1px solid rgba(33, 63, 125, 0.2);
   border-radius: 8px;
   font-family: inherit;
@@ -88,7 +88,7 @@
   border-right: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  padding-left: 8px;
+  padding-left: 15px;
   color: rgba(84, 95, 125, 0.7);
   font-weight: 400;
   text-transform: capitalize;
@@ -97,7 +97,7 @@
   position: relative;
   width: 100%;
   cursor: pointer;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .filter-dropdown-container .label .custom-select__selected {
   display: flex;
@@ -113,6 +113,7 @@
   font-weight: 400;
   text-transform: capitalize;
   width: 100%;
+  padding-left: 15px;
 }
 .filter-dropdown-container .label .custom-select__selected svg {
   position: absolute;
@@ -140,6 +141,7 @@
   transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 1;
   text-align: start;
+  padding-left: 15px;
 }
 .filter-dropdown-container .label .custom-select__option {
   padding: 8px;
@@ -161,6 +163,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 .filter-dropdown-container .actions button {
   background: none;

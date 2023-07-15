@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "../scss/login.css";
 import data from "../utils/lendsqr_data.json";
+import "../scss/LoginNew.css";
 
-const Login = ({ setTotalPosts }) => {
+const LoginNew = ({ totalPosts, setTotalPosts }) => {
   const [errorMessage, setErrorMessage] = useState("");
   const [formData, setFormData] = useState({
     email: "",
@@ -206,4 +206,4 @@ const Login = ({ setTotalPosts }) => {
   );
 };
 
-export default Login;
+export default LoginNew;
