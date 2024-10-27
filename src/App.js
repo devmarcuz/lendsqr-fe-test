@@ -1,24 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import DashBoardUser from "./pages/DashBoardUser";
+import { useState, useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 
 function App() {
+  const [totalPosts, setTotalPosts] = useState([]);
+
+  useEffect(() => {
+    if (localStorage.getItem("lendsqr_data")) {
+      setTotalPosts(JSON.parse(localStorage.getItem("lendsqr_data")));
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route
+            path="/"
+            exact
+            element={
+              <Dashboard
+                totalPosts={totalPosts && totalPosts}
+                setTotalPosts={setTotalPosts}
+              />
+            }
+          />
+          <Route
+            path="/login"
+            exact
+            element={
+              <Login
+                totalPosts={totalPosts && totalPosts}
+                setTotalPosts={setTotalPosts}
+              />
+            }
+          />
+          <Route
+            path="/user/:id"
+            exact
+            element={<DashBoardUser totalPosts={totalPosts && totalPosts} />}
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
