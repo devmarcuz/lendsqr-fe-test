@@ -13,6 +13,24 @@ const UserRowMenu = ({
 
   const containerRef = useRef(null);
 
+  const handleClickOutside = (event) => {
+    if (
+      containerRef?.current &&
+      !containerRef?.current.contains(event.target)
+    ) {
+      // toggleRowMenu(false);
+    }
+  };
+
+  useEffect(() => {
+    // Add event listener to document
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Remove event listener on cleanup
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (
