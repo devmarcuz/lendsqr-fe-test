@@ -4,7 +4,6 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import DashBoardUser from "./pages/DashBoardUser";
 import { useState, useEffect } from "react";
-import Lenis from "@studio-freight/lenis";
 
 function App() {
   const [totalPosts, setTotalPosts] = useState([]);

@@ -126,51 +126,6 @@ const FilterDropDown = ({
     });
   };
 
-  function searchElements(searchObj, elements) {
-    const filteredElements = elements.filter((element) => {
-      for (const key in searchObj) {
-        if (
-          searchObj.hasOwnProperty(key) &&
-          element.hasOwnProperty(key) &&
-          element[key].toLowerCase() === searchObj[key].toLowerCase()
-        ) {
-          return true;
-        }
-      }
-      return false;
-    });
-
-    // Remove duplicates based on unique key values
-    const uniqueElements = Array.from(
-      new Set(filteredElements.map(JSON.stringify))
-    ).map(JSON.parse);
-
-    return uniqueElements;
-  }
-
-  function searchElements2(searchObj, elements) {
-    const filteredElements = elements.filter((element) => {
-      let matchingCount = 0;
-      for (const key in searchObj) {
-        if (
-          searchObj.hasOwnProperty(key) &&
-          element.hasOwnProperty(key) &&
-          element[key].toLowerCase() === searchObj[key].toLowerCase()
-        ) {
-          matchingCount++;
-        }
-      }
-      return matchingCount >= 2; // Modify the number of matching key-value pairs as per your requirement
-    });
-
-    // Remove duplicates based on unique key values
-    const uniqueElements = Array.from(
-      new Set(filteredElements.map(JSON.stringify))
-    ).map(JSON.parse);
-
-    return uniqueElements;
-  }
-
   const onSubmit = (e) => {
     e.preventDefault();
 
@@ -178,13 +133,11 @@ const FilterDropDown = ({
       return Object.keys(searchData).every((key) => {
         if (searchData[key] !== "") {
           if (key === "status") {
-            // For status, ensure it matches exactly (case-insensitive)
             return (
               post.status &&
               post.status.toLowerCase() === searchData.status.toLowerCase()
             );
           } else {
-            // For other fields, use case-insensitive partial matching
             return (
               post[key] &&
               post[key]
@@ -194,16 +147,16 @@ const FilterDropDown = ({
             );
           }
         }
-        return true; // If searchData field is empty, include all posts for that field
+        return true;
       });
     });
 
-    // Check if filteredPosts has the same length as totalPosts
     const result =
       filteredPosts.length === totalPosts.length ? [] : filteredPosts;
 
     setCurrentPage(1);
     setSearchArray(result);
+    shutFilterDropDown();
 
     // if (totalPosts.length > 1 && searchData) {
     //   let count = 0;

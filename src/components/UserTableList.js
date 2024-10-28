@@ -148,6 +148,15 @@ const UserTableList = ({
     // toggleRowMenu(index);
   };
 
+  const shutFilterDropDown = () => {
+    setFilterDropDown(false);
+    setFilterDropDown5(false);
+    setFilterDropDown6(false);
+    setFilterDropDown2(false);
+    setFilterDropDown3(false);
+    setFilterDropDown4(false);
+  };
+
   useEffect(() => {
     console.log(searchArray);
   }, [searchArray]);
@@ -176,7 +185,7 @@ const UserTableList = ({
                   searchData={searchData}
                   setSearchData={setSearchData}
                   containerRef={containerRef}
-                  // shutFilterDropDown={shutFilterDropDown}
+                  shutFilterDropDown={shutFilterDropDown}
                   onHandleClose={handleClose}
                 />
               )}
@@ -199,7 +208,7 @@ const UserTableList = ({
                   setSearchArray={setSearchArray}
                   searchData={searchData}
                   setSearchData={setSearchData}
-                  // shutFilterDropDown={shutFilterDropDown}
+                  shutFilterDropDown={shutFilterDropDown}
                   onHandleClose={handleClose}
                   containerRef={containerRef2}
                 />
@@ -223,7 +232,7 @@ const UserTableList = ({
                   setSearchArray={setSearchArray}
                   searchData={searchData}
                   setSearchData={setSearchData}
-                  // shutFilterDropDown={shutFilterDropDown}
+                  shutFilterDropDown={shutFilterDropDown}
                   onHandleClose={handleClose}
                   containerRef={containerRef3}
                 />
@@ -247,7 +256,7 @@ const UserTableList = ({
                   setSearchArray={setSearchArray}
                   searchData={searchData}
                   setSearchData={setSearchData}
-                  // shutFilterDropDown={shutFilterDropDown}
+                  shutFilterDropDown={shutFilterDropDown}
                   onHandleClose={handleClose}
                   containerRef={containerRef4}
                 />
@@ -271,7 +280,7 @@ const UserTableList = ({
                   setSearchArray={setSearchArray}
                   searchData={searchData}
                   setSearchData={setSearchData}
-                  // shutFilterDropDown={shutFilterDropDown}
+                  shutFilterDropDown={shutFilterDropDown}
                   onHandleClose={handleClose}
                   containerRef={containerRef5}
                 />
@@ -295,7 +304,7 @@ const UserTableList = ({
                   setSearchArray={setSearchArray}
                   searchData={searchData}
                   setSearchData={setSearchData}
-                  // shutFilterDropDown={shutFilterDropDown}
+                  shutFilterDropDown={shutFilterDropDown}
                   onHandleClose={handleClose}
                   containerRef={containerRef6}
                 />
