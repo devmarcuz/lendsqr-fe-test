@@ -4,7 +4,7 @@ This repository contains the solution for the Lendsqr Frontend Test. It includes
 
 ## Deployment
 
-The deployed application can be found at [https://ademola-lendsqr-fe-test.vercel.app/](https://ademola-lendsqr-fe-test.vercel.app/)
+The deployed application can be found at [https://marcus-lendsqr-fe-test.vercel.app](https://marcus-lendsqr-fe-test.vercel.app)
 
 ## Pages
 

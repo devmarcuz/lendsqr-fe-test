@@ -3,7 +3,7 @@ import React from "react";
 const BuisnessIcons = () => {
   return (
     <div className="parent-case">
-      <div className="head">buisness</div>
+      <div className="head">buisnesses</div>
       <div className="tag-list ">
         <svg
           width="16"
